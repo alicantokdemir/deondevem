@@ -2,30 +2,30 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const DEFAULT_PRODUCT = {
-  name: "Cacau",
-  plantadaNo: "MT - Campo Grande",
-  plantadaNaData: "2019",
-  steps: [
-    {
-      description:
-        "1- Aqui voce pode ver a fazenda e os produtos seram plantados:",
-      media: "/step1.jpg",
-    },
-    {
-      description: "2- Ele esta crescendo:",
-      media: "/step2.jpg",
-    },
-    {
-      description: "3- Pronto para colheita :)",
-      media: "/step3.jpg",
-    },
-    {
-      description: "4- Chegando nosso supermercado:",
-      media: "/step4.jpg",
-    },
-  ],
-};
+// const DEFAULT_PRODUCT = {
+//   name: "Cacau",
+//   plantadaNo: "MT - Campo Grande",
+//   plantadaNaData: "2019",
+//   steps: [
+//     {
+//       description:
+//         "1- Aqui voce pode ver a fazenda e os produtos seram plantados:",
+//       media: "/step1.jpg",
+//     },
+//     {
+//       description: "2- Ele esta crescendo:",
+//       media: "/step2.jpg",
+//     },
+//     {
+//       description: "3- Pronto para colheita :)",
+//       media: "/step3.jpg",
+//     },
+//     {
+//       description: "4- Chegando nosso supermercado:",
+//       media: "/step4.jpg",
+//     },
+//   ],
+// };
 
 export default function Product({ params }: { params: any }) {
   const [product, setProduct] = useState<any>({ steps: [] });
